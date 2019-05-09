@@ -1,0 +1,85 @@
+/*
+	Styles for Bouncy Balls
+	Jonathan Harrison
+	2019
+*/
+
+/*
+	static content
+*/
+html, body {
+	background-color: #fefefe;
+}
+#bbWelcomeAnimationContainer {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: #F2E205;
+	top: 0;
+	z-index: 100;
+	overflow: hidden;
+}
+.bb-star {
+  font-size: 120%;
+  display: inline;
+  color: #F20544;
+}
+
+/*
+	animated content
+*/
+#textWelcome, #textTo {
+	position: absolute;
+	visibility: hidden;
+	z-index: 1000;
+	width: 100%;
+	text-align: center;
+}
+.bb-welcome-text {
+	color: #444;
+	font-size: 3.5rem;
+	font-weight: 300;
+	font-family: "Helvetica-Nue", Helvetica, Sans-serif;
+}
+#bbWelcomeAnimationContainer .bb-star {
+	font-size: 2em;
+	vertical-align: super;
+}
+.bb-ball {
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1001;
+}
+.bb-ball-color-1 {
+	background-color: #F20544;
+}
+.bb-ball-color-2 {
+	background-color: #0583F2;
+}
+.bb-ball-color-3 {
+	background-color: #0BD904;
+}
+
+/* media queries */
+/* really small */
+@media screen and (max-width: 23em) {
+  .bb-welcome-text {
+  	font-size: 3em;
+  }
+}
+
+/* demo content */
+#demoBody {
+	margin-top: 1em;
+}
+#demoFooter {
+	padding: 1em 0;
+	margin-top: 1em;
+	font-size: 1.125em;
+	color: #666;
+	background-color: #e6e6e6;
+}
+.callout {
+	background-color: #fefefe;
+}
+
